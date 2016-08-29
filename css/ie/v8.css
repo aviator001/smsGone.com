@@ -1,0 +1,57 @@
+.button
+{
+	position: relative;
+	-ms-behavior: url('css/ie/PIE.htc');
+}
+
+form input[type=text],
+form input[type=password],
+form select,
+form textarea
+{
+	position: relative;
+	-ms-behavior: url('css/ie/PIE.htc');
+}
+
+#nav > ul > li > span,
+#nav > ul > li > a
+{
+	position: relative;
+	-ms-behavior: url('css/ie/PIE.htc');
+}
+
+.dropotron
+{
+	-ms-behavior: url('css/ie/PIE.htc');
+}
+
+	.dropotron a,
+	.dropotron span
+	{
+		border: 0;
+	}
+
+	.dropotron.level-0
+	{
+		margin: 0;
+	}
+
+		.dropotron.level-0:before
+		{
+			display: none;
+		}
+
+#banner
+{
+	-ms-behavior: url('css/ie/backgroundsize.min.htc');
+}
+
+#newsletter .text
+{
+	-ms-behavior: url('css/ie/PIE.htc');
+}
+
+#newsletter .submit
+{
+	-ms-behavior: url('css/ie/PIE.htc');
+}

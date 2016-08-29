@@ -1,0 +1,398 @@
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	body
+	{
+		line-height: 1.75em;
+		font-size: 10pt;
+		letter-spacing: 0;
+	}
+
+	h2
+	{
+		font-size: 1.30em;
+	}
+
+	.container
+	{
+		padding: 0px 15px;
+	}
+
+	header
+	{
+		margin-bottom: 2em;
+	}
+	
+		header h2
+		{
+			line-height: 1.4em;
+			font-size: 1.3em;
+		}
+		
+	ul.social
+	{
+		text-align: center;
+	}
+	
+	.button
+	{
+		display: block;
+		text-align: center;
+	}
+	
+	/* Forms */
+
+		form
+		{
+		}
+
+			form input[type=text],
+			form input[type=password],
+			form select,
+			form textarea
+			{
+				padding: 0.70em;
+				font-size: 1em;
+			}
+
+			form .button
+			{
+				display: block;
+			}
+
+	/* Buttons */
+		
+		.button
+		{
+			display: block;
+			margin-top: 1.5em !important;
+			padding: 0.50em;
+		}
+
+	/* Lists */
+
+		ul.icons
+		{
+		}	
+
+			ul.icons > li
+			{
+				padding-left: 6em;
+			}
+
+	/* Meta */
+
+		.meta
+		{
+			font-size: 0.80em;
+		}
+		
+	.mobile-hide
+	{
+		display: none;
+	}
+
+/*********************************************************************************/
+/* Mobile UI                                                                     */
+/*********************************************************************************/
+
+	#titleBar
+	{
+		background: none;
+	}
+
+		#titleBar .title
+		{
+			display: none;
+		}
+
+		#titleBar .toggle
+		{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 80px;
+			height: 60px;
+		}
+
+			#titleBar .toggle:before
+			{
+				content: '';
+				position: absolute;
+				left: 7px;
+				top: 7px;
+				background: rgba(0,0,0,0.2);
+				width: 60px;
+				height: 40px;
+				border-radius: 4px;
+			}
+
+			#titleBar .toggle:after
+			{
+				content: '';
+				display: block;
+				width: 20px;
+				height: 12px;
+				position: absolute;
+				left: 27px;
+				top: 21px;
+				background: url('images/toggle.svg') 0px 0px no-repeat;
+				opacity: 0.7;
+			}
+
+			#titleBar .toggle:active:after
+			{
+				opacity: 0.9;
+			}
+
+	#navPanel
+	{
+		background: #3d4241;
+		box-shadow: inset -10px 0px 10px 0px rgba(0,0,0,0.1);
+	}
+
+		#navPanel .link
+		{
+			display: block;
+			color: #888;
+			text-decoration: none;
+			height: 44px;
+			line-height: 44px;
+			border-top: solid 1px  rgba(255,255,255,0.05);
+			padding: 0 1em 0 1em;
+			text-transform: uppercase;
+		}
+		
+			#navPanel .link.depth-0
+			{
+				color: #fff;
+			}
+
+			#navPanel .indent-1 { display: inline-block; width: 1em; }
+			#navPanel .indent-2 { display: inline-block; width: 2em; }
+			#navPanel .indent-3 { display: inline-block; width: 3em; }
+			#navPanel .indent-4 { display: inline-block; width: 4em; }
+			#navPanel .indent-5 { display: inline-block; width: 5em; }
+			#navPanel .depth-0 { color: #fff; }
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	body:before,
+	body:after
+	{
+		display: none;
+	}
+
+	#header
+	{
+		padding: 5em 0em !important;
+	}
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+	
+	#nav
+	{
+		display: none;
+	}
+	
+	#featured .button
+	{
+		margin-bottom: 2em;
+	}
+	
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+	#banner
+	{
+	}
+	
+		#banner header h2
+		{
+			font-size: 1.7em;
+		}
+	
+		#banner header .byline
+		{
+			display: block;
+			width: 100%;
+			padding: 1em 1em 0em 1em !important;
+			font-size: 1.1em;
+			color: #fff;
+		}
+
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
+
+	#main
+	{
+		padding: 4em 0em 3em 0em;
+	}
+
+		#main .details
+		{
+			margin: 0em 1em 2em 1em;
+		}
+
+		#main .button
+		{
+			margin-bottom: 2em;
+		}
+
+		#main header
+		{
+			margin-bottom: 0;
+		}
+		
+			#main header h2
+			{
+				font-size: 1.7em;
+			}
+		
+			#main header .byline
+			{
+				padding: 0.50em 0em 1em 0em !important;
+				font-size: 1.1em;
+			}
+
+			.homepage #main header .byline
+			{
+				display: block;
+				width: 100%;
+				padding: 0.50em 1em 1em 1em !important;
+				font-size: 1.1em;
+			}
+
+		.homepage #main h3
+		{
+			padding-bottom: 0.50em;
+			font-size: 1.50em;
+		}
+
+		#main h3
+		{
+			padding: 1.5em 0em 0.80em 0em;
+			text-transform: capitalize;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 1.30em;
+			font-weight: 400;
+		}
+
+/*********************************************************************************/
+/* Content                                                                       */
+/*********************************************************************************/
+
+	#content
+	{
+	}
+	
+		#content h3
+		{
+			font-size: 1.1em;
+		}		
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+	
+	#footer
+	{
+	}
+	
+		#footer section
+		{
+			margin-bottom: 2em;
+		}
+
+/*********************************************************************************/
+/* Featured                                                                      */
+/*********************************************************************************/
+
+	#featured
+	{
+		padding-bottom: 2em;
+	}
+
+/*********************************************************************************/
+/* Portfolio                                                                     */
+/*********************************************************************************/
+
+	#portfolio
+	{
+		padding-bottom: 2em;
+		text-align: center;
+	}
+	
+		#portfolio .image
+		{
+			margin-bottom: 0em;
+		}
+	
+		#portfolio .image img
+		{
+		}
+
+		#portfolio header
+		{
+		}
+	
+			#portfolio header h2
+			{
+				font-size: 2em;
+			}
+
+		#portfolio header .byline
+		{
+		}
+	
+	
+		#portfolio .border-style
+		{
+			margin-top: 1em;
+		}
+	
+		#portfolio .border
+		{
+		}
+	
+		#portfolio .pbox1
+		{
+			padding: 0;
+		}
+		
+			#portfolio .network
+			{
+			}
+
+			#portfolio .author
+			{
+				margin-bottom: 1em;
+				text-align: center;
+			}
+		
+				#portfolio .author h3
+				{
+				}
+
+				#portfolio .author span
+				{
+					margin-top: -4px;
+				}
+
+		#portfolio .pbox2
+		{
+		}
+
+		#portfolio .pbox3
+		{
+			padding: 0;
+		}
+
+	

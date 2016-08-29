@@ -1,0 +1,90 @@
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+
+	body
+	{
+		font-size: 10pt;
+	}
+
+		ul.social
+		{
+			text-align: right;
+		}
+
+			ul.social li:last-child
+			{
+				padding-right: 0;
+			}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo
+	{
+		top: -0.2em;
+	}
+	
+		#logo a
+		{
+			font-size: 3em;
+		}
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+	#nav
+	{
+		width: 100%;
+	}
+
+		#nav > ul > li > span,
+		#nav > ul > li > a
+		{
+			font-size: 0.80em;
+
+		}
+
+			#nav > ul > li.break
+			{
+				/*
+					Use this to adjust the logo gap in the menu. You'll also
+					need to update this same rule in style.css.
+				*/
+				margin-left: 16em;
+			}
+
+/*********************************************************************************/
+/* Portfolio                                                                     */
+/*********************************************************************************/
+
+	#portfolio
+	{
+	}
+	
+		#portfolio .pbox1
+		{
+			padding-top: 0.25em;
+			padding-left: 3em;
+		}
+		
+			#portfolio .network
+			{
+				display: block;
+			}
+
+			#portfolio .author
+			{
+				display: block;
+				margin: 0 0 0 0;
+			}
+
+		#portfolio .pbox3
+		{
+			padding-top: 1em;
+			padding-right: 3em;
+		}
+
